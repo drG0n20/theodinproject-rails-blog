@@ -1,6 +1,6 @@
-<h1>Articles</h1>
-Our blog has <%= Article.public_count %> articles and counting!
-<ul>
+<h1 class="text-3xl font-bold underline">Articles</h1>
+<p class="h-120 w-120">Our blog has <%= Article.public_count %> articles and counting!</p>
+<ul class="text-xl font-medium text-black">
   <% @articles.each do |article| %>
     <% unless article.archived? %>
       <li>
